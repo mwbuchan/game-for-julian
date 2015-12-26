@@ -1,0 +1,29 @@
+from tkinter import *
+
+
+class App(Tk):
+    def __init__(self):
+        Tk.__init__(self)
+        self.title("Julian's Game")
+        self.buttons()
+        #self.toplevels()
+
+    def buttons(self):
+        self.btnA = Button(self, text = "Aa", font= "16", height = 2, width= 5)
+        self.btnA.grid()
+'''     btnB
+        btnC
+        btnD
+        btnE
+        btnF
+        btnG
+        btnH
+        '''
+    #def toplevels(self):
+        
+def main():
+    app = App()
+    app.mainloop()
+
+if __name__ == "__main__":
+    main()
